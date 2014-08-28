@@ -17,9 +17,7 @@ namespace CustomLibraryAutomation
         private RadTextBox _radtext;
         public void NavigateUrl()
         {
-            Manager.LaunchNewBrowser(BrowserType.InternetExplorer);
-            ActiveBrowser.ClearCache(BrowserCacheType.Cookies);
-            ActiveBrowser.ClearCache(BrowserCacheType.TempFilesCache);
+            Manager.LaunchNewBrowser(BrowserType.InternetExplorer);            
             ActiveBrowser.NavigateTo(@"http://localhost/MathsCalculator/MathsPage.aspx");
             ActiveBrowser.WaitUntilReady();
             _browser = ActiveBrowser;
