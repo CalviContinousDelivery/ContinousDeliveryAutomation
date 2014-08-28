@@ -20,7 +20,7 @@ namespace CustomLibraryAutomation
             Manager.LaunchNewBrowser(BrowserType.InternetExplorer);
             ActiveBrowser.ClearCache(BrowserCacheType.Cookies);
             ActiveBrowser.ClearCache(BrowserCacheType.TempFilesCache);
-            ActiveBrowser.NavigateTo(@"http://192.168.86.1/MathsCalculator/MathsPage.aspx");
+            ActiveBrowser.NavigateTo(@"http://localhost/MathsCalculator/MathsPage.aspx");
             ActiveBrowser.WaitUntilReady();
             _browser = ActiveBrowser;
         }
