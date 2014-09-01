@@ -18,7 +18,7 @@ namespace CustomLibraryAutomation
         public void NavigateUrl()
         {
             Manager.LaunchNewBrowser(BrowserType.InternetExplorer);
-            ActiveBrowser.NavigateTo(@"http://localhost/MathsWebsite/MathsPage.aspx");
+            ActiveBrowser.NavigateTo(@"http://192.168.86.1/MathsCalculator/mathspage.aspx");
             ActiveBrowser.WaitUntilReady();
             _browser = ActiveBrowser;
         }
